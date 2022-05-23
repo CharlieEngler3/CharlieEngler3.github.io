@@ -1,0 +1,220 @@
+/*
+    Main Background Color: #f3f3f3
+    Main Text Color: #131313
+*/
+
+*{
+    font-family: 'Roboto';
+    src: url('fonts/Roboto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #f3f3f3;
+    color: #131313;
+    text-align: center;
+
+    position: relative;
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 6vw;
+    text-decoration: underline;
+
+    font-weight: bold;
+}
+
+.Divider{
+    width: calc(100% - 16px);
+
+    border: none;
+    border-top: 0.5vw solid #131313;
+
+    margin-bottom: 1vw;
+}
+
+.Topic{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 500;
+
+    display: inline-block;
+
+    padding: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    border: none;
+
+    border-radius: 0.2vw;
+}
+
+.PageButton{
+    position: relative;
+
+    display: inline-block;
+
+    width: calc((100vw / 3) - 5vw);
+    height: calc((100vw / 4) - 5vw);
+
+    margin: 1vw;
+
+    padding: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    border-radius: 0.2vw;
+
+    font-size: 4vw;
+    text-decoration: none;
+    color: #131313;
+
+    transition: 300ms;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+    .PageButtonText{
+        position: absolute;
+
+        width: calc(100% - 2vw);
+
+        top: 38%;
+
+        background-color: #ffffff;
+        border-radius: 0.2vw;
+
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+        text-shadow: 0 0 3px rgba(0,0,0,0.43);
+    }
+
+    .PageButton:hover{
+        cursor: pointer;
+
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+
+        background-size: 102%;
+
+        padding: 1.2vw;
+        padding-top: 0.7vw;
+        padding-bottom: 0.7vw;
+
+        margin: 0.8vw;
+    }
+
+.EntryHomeButton{
+    position: absolute;
+
+    left: 0;
+
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #131313;
+
+    background-color: #ffffff;
+    border-radius: 0.2vw;
+
+    padding: 0.5vw;
+
+    margin-left: 0.1vw;
+
+    z-index: 10;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+    text-shadow: 0 0 3px rgba(0,0,0,0.43);
+
+    transition: 300ms;
+}
+
+    .EntryHomeButton:hover{
+        font-size: 1.55vw;
+
+        padding: 0.55vw;
+
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    }
+
+.EntryHeader{
+    position: absolute;
+
+    margin: 0;
+
+    left: -8px;
+    top: -8px;
+
+    width: 100%;
+    height: 17vw;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+}
+
+.EntryHeaderText{
+    display: inline-block;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+
+    padding: 1vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+    font-size: 5vw;
+
+    background-color: #ffffff;
+    border-radius: 0.2vw;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+    text-shadow: 0 0 3px rgba(0,0,0,0.43);
+}
+
+.SunsetEssay{
+    position: absolute;
+
+    width: 90%;
+
+    float: left;
+
+    top: calc(17vw + 5vw - 8px);
+    left: calc(5% - 8px);
+    
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+}
+
+.FishingInstructions{
+    position: absolute;
+
+    width: 90%;
+
+    padding: 2.5%;
+
+    float: left;
+
+    top: calc(17vw + 5vw - 8px);
+    left: calc(2.5% - 8px);
+    
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    text-align: left;
+}
