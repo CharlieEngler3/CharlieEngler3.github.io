@@ -266,3 +266,43 @@ p{
     margin: 0;
     margin-top: 3vw;
 }
+
+.MapImage{
+    position: relative;
+    float: left;
+
+    margin-top: calc(17vw + 5vw - 8px);
+    margin-left: 20vw;
+    margin-right: auto;
+
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    width: 31%;
+}
+
+.MapButton{
+    position: absolute;
+
+    font-size: 0;
+
+    width: 3.8vw;
+    height: 5vw;
+
+    background: none;
+    
+    cursor: pointer;
+}
+
+.PlaceDescription{
+    float: right;
+
+    font-size: 2vw;
+
+    text-shadow: 0 0 3px rgba(0,0,0,0.43);
+
+    margin-top: calc(17vw + 5vw - 8px);
+    margin-right: 15vw;
+
+    width: 30%;
+}

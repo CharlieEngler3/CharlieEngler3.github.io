@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link href="../style.css" type="text/css" rel="stylesheet" />
+
+        <title>Lake Road</title>
+    </head>
+
+    <body>
+        <a href="../index.html" class="EntryHomeButton">HOME</a>
+
+        <div class="EntryHeader" style="background-image: url('../images/page_buttons/lake_road.jpg');background-position: 50% 50%;background-repeat:no-repeat;background-size:cover;">
+            <div class="EntryHeaderText">Lake Road</div>
+        </div>
+
+        <br/>
+
+        <div class="MapImage">
+            <img src="../images/assets/lake_road_map.png" style="width:100%;"/>
+            
+            <button class="MapButton" onclick="DisplayDescription('Hebron');" style="left: 0;top: 0.5vw;">Hebron</button>
+            <button class="MapButton" onclick="DisplayDescription('IdleAWhile');" style="left: 22.3vw;top: 14.5vw;">Idle a While</button>
+            <button class="MapButton" onclick="DisplayDescription('Ledges');" style="left: 3.5vw;top: 17vw;">The Ledges</button>
+            <button class="MapButton" onclick="DisplayDescription('Cottage');" style="left: 22.3vw;top: 27.2vw;">The Cottage</button>
+            <button class="MapButton" onclick="DisplayDescription('BigCatch');" style="left: 25vw;top: 35.8vw;">The Big Catch</button>
+        </div>
+
+        <div class="PlaceDescription" id="Hebron">
+            Hebron is a town located north of Newfound Lake that holds numerous fairs, festivals, and other events throughout the course of the year. It always stood out as
+            a special place to me as a child when my grandparents were living on Newfound Lake because my grandmother loved to partake in all of the events that the village
+            of Hebron held.
+        </div>
+
+        <div class="PlaceDescription" id="IdleAWhile">
+            Idle a While is an ice cream shop located in Pasquaney Bay at Newfound Lake. The name is actually an instruction for customers arriving by boat who pull up to
+            the dock owned by the shop. Most boats turn off their engine to go inside to get ice cream, which makes sense with the current gas prices. The name is instead
+            a better representation of the numerous other boats waiting in line to dock and get their own ice cream who have to keep their engines on in order to stop themselves
+            from drifting. Despite the wait, the ice cream served by Idle a While is actually very good and they have an impressive selection for such a small shop.
+        </div>
+
+        <div class="PlaceDescription" id="Ledges">
+            The Ledges is a community of condos where my grandparents used to live when I was growing up. At the time, my mother had not met my stepfather, so this was our
+            experience with Newfound Lake, although my mother and grandparents had rented a house a few plots down from my stepfather when she was growing up. The Ledges had
+            a playground and field that I can distinctly remember as well as a road leading into a tunnel that let out onto the perfectly maintained dual beaches. This is also
+            where my grandfather met Coach Ball.
+        </div>
+
+        <div class="PlaceDescription" id="Cottage">
+            The Cottage at 75 Giles Road, named after one of my stepfather's relatives who founded the road and built the cottage around 1908, is one of my favorite places on
+            earth. The privacy that the land offers as well as the direct water access give it an allure that's difficult to rival. There are actually two cottages on two plots
+            here because his family loved it so much. Each offer a getaway that truly blocks out any intrusive thoughts regarding the mundanity of everyday life. Time seems to
+            stand still here until you have to leave.
+        </div>
+
+        <div class="PlaceDescription" id="BigCatch">
+            The Big Catch is a restaurant located on the south end of the lake. This restaurant, like many others sitting directly on the lake, offer boat and car parking. The
+            food here is great with a large selection from a diverse menu. There is obviously a large emphasis on seafood given the name, and ironically none of it comes from
+            Newfound Lake. The other great part about The Big Catch is that they offer their own ice cream with fast service similar to Stillwells. 
+        </div>
+
+        <script>
+            let ids = ["Hebron", "IdleAWhile", "Ledges", "Cottage", "BigCatch"];
+
+            for(let i = 0; i < ids.length; i++)
+            {
+                document.getElementById(ids[i]).style.display = "none";
+            }
+
+            function DisplayDescription(id)
+            {
+                let currentElem = document.getElementById(id);
+
+                currentElem.style.display = "block";
+
+                for(let i = 0; i < ids.length; i++)
+                {
+                    if(ids[i] !== id)
+                    {
+                        document.getElementById(ids[i]).style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
