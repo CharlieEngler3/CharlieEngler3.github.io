@@ -292,6 +292,8 @@ p{
     background: none;
     
     cursor: pointer;
+    
+    border: none;
 }
 
 .PlaceDescription{
