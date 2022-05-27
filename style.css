@@ -349,3 +349,21 @@ p{
 
     text-shadow: 0 0 3px rgba(0,0,0,0.43);
 }
+
+.Poem{
+    position: absolute;
+
+    width: 30%;
+
+    padding: 2.5%;
+
+    float: left;
+
+    top: calc(17vw + 5vw - 8px);
+    left: calc(35% - 8px);
+    
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    text-align: center;
+}
