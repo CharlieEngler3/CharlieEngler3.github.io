@@ -306,3 +306,46 @@ p{
 
     width: 30%;
 }
+
+.BoatingInstructions{
+    position: absolute;
+
+    width: 90%;
+
+    padding: 2.5%;
+
+    float: left;
+
+    top: calc(17vw + 5vw - 8px);
+    left: calc(2.5% - 8px);
+    
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+
+    text-align: center;
+}
+
+.MotorInstructionImage{
+    display: inline;
+    width: 24.8%;
+    height: auto;
+
+    border-radius: 0.2vw;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.43);
+}
+
+.MotorInstructionCaption{
+    display: inline;
+
+    font-size: 0.8vw;
+
+    margin: 0;
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.BoatingInstructionsStep{
+    font-size: 2vw;
+
+    text-shadow: 0 0 3px rgba(0,0,0,0.43);
+}
